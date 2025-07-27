@@ -1,0 +1,19 @@
+{
+  "entryFile": "src/app.ts",
+  "noImplicitAdditionalProperties": "throw-on-extras",
+  "controllerPathGlobs": ["src/controllers/**/*Controller.ts"],
+  "spec": {
+    "outputDirectory": "dist",
+    "specVersion": 3,
+    "name": "Qualiextra API",
+    "description": "API REST pour la gestion des utilisateurs",
+    "version": "1.0.0",
+    "host": "localhost:3000",
+    "schemes": ["http"],
+    "basePath": "/api"
+  },
+  "routes": {
+    "routesDir": "src",
+    "middleware": "express"
+  }
+}
