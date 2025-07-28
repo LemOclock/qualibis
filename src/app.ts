@@ -10,10 +10,19 @@ import {
   requireOwnershipOrAdmin,
   AuthenticatedRequest,
 } from "./middleware/auth";
+import cors from "cors";
 
 dotenv.config();
 
 const app: Application = express();
+
+app.use(
+  cors({
+    origin: process.env.FRONTEND_URL,
+    credentials: true,
+  })
+);
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 

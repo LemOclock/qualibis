@@ -8,7 +8,7 @@
     "name": "Qualiextra API",
     "description": "API REST pour la gestion des utilisateurs",
     "version": "1.0.0",
-    "host": "https://qualibis-production.up.railway.app/api",
+    "host": "localhost:3000",
     "schemes": ["http", "https"],
     "basePath": "/api"
   },
