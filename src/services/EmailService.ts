@@ -25,7 +25,8 @@ export class EmailService {
     firstName: string,
     token: string
   ): Promise<void> {
-    const verificationUrl = `http://localhost:3000/api/auth/verify-email?token=${token}`;
+    const baseUrl = process.env.API_URL || 'http://localhost:3000';
+    const verificationUrl = `${baseUrl}/api/auth/verify-email?token=${token}`;
     // envoi lemail avec une url et le token en supplément a la fin
 
     const mailOptions = {
